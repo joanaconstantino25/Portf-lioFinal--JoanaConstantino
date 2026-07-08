@@ -1,0 +1,67 @@
+/*
+Nome: Joana Constantino
+Número de estudante: [COLOCA AQUI O TEU NÚMERO]
+Nome do exercício: Portfólio Final
+Ano letivo: 3.º ano, 2025–2026
+Semestre: 2.º
+Unidade curricular: Laboratório de Projeto II
+Curso: LDGM
+Escola: ESAD.CR
+Docente: Luis Carradas
+Data de avaliação: [COLOCA A DATA]
+*/
+
+/* Importação das fontes utilizadas no portfólio */
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+/* Remove margens predefinidas e torna os tamanhos mais fáceis de controlar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo geral da página */
+body {
+  background-color: #f7f7f5;
+  color: #111111;
+  font-family: "Space Grotesk", Arial, sans-serif;
+}
+
+/* Área principal da página inicial */
+main {
+  min-height: 100vh;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Texto pequeno usado como identificação */
+p {
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Nome principal do portfólio */
+h1 {
+  max-width: 900px;
+  font-size: clamp(64px, 12vw, 180px);
+  font-weight: 600;
+  line-height: 0.82;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+}
+
+/* Ajustes para ecrãs mais pequenos, como telemóvel */
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: clamp(56px, 18vw, 100px);
+  }
+}
