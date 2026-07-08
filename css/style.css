@@ -64,4 +64,328 @@ h1 {
   h1 {
     font-size: clamp(56px, 18vw, 100px);
   }
+}/*
+Nome: Joana Constantino
+Número de estudante: 3230253
+Nome do exercício: Portfólio Final
+Ano letivo: 3.º ano, 2025–2026
+Semestre: 2.º
+Unidade curricular: Laboratório de Projeto II
+Curso: LDGM
+Escola: ESAD.CR
+Docente: Luis Carradas
+Data de avaliação: [COLOCA A DATA]
+*/
+
+/* Importação das fontes utilizadas no portfólio */
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+/* Reset básico para controlar melhor margens e tamanhos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Comportamento suave ao clicar no menu */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilo geral do portfólio */
+body {
+  background-color: #f7f7f3;
+  color: #111111;
+  font-family: "Space Grotesk", Arial, sans-serif;
+}
+
+/* Links gerais */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Cabeçalho fixo no topo */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 24px 32px;
+  mix-blend-mode: difference;
+  color: #ffffff;
+}
+
+/* Nome no canto superior */
+.logo {
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* Menu de navegação */
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* Área principal */
+main {
+  width: 100%;
+}
+
+/* Secção inicial */
+.hero {
+  min-height: 100vh;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Linha superior da página inicial */
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 72px;
+}
+
+/* Texto pequeno técnico/editorial */
+.small-label {
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Título principal */
+h1 {
+  max-width: 1050px;
+  font-size: clamp(68px, 13vw, 190px);
+  font-weight: 600;
+  line-height: 0.82;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+}
+
+/* Texto inferior da página inicial */
+.hero-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 850px;
+  margin-left: auto;
+}
+
+.hero-bottom p {
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+/* Secção dos projetos */
+.projects-section {
+  padding: 120px 32px 80px;
+  border-top: 1px solid #111111;
+}
+
+/* Cabeçalho de cada secção */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 48px;
+}
+
+h2 {
+  font-size: clamp(48px, 8vw, 120px);
+  font-weight: 600;
+  line-height: 0.85;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+/* Grelha dos projetos */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* Cartão de cada projeto */
+.project-card {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 16px;
+  min-height: 420px;
+  border-top: 1px solid #111111;
+  padding-top: 16px;
+}
+
+/* Área visual provisória de cada projeto */
+.project-visual {
+  min-height: 360px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 18px;
+  overflow: hidden;
+}
+
+/* Número grande dentro da imagem provisória */
+.project-visual span {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 0.8;
+  letter-spacing: -0.08em;
+}
+
+/* Blocos visuais inspirados nas referências */
+.visual-one {
+  background: linear-gradient(135deg, #111111, #4d4d4d);
+  color: #f7f7f3;
+}
+
+.visual-two {
+  background: #111111;
+  color: #f7f7f3;
+}
+
+.visual-three {
+  background: linear-gradient(135deg, #ffffff, #dcdcdc);
+  color: #111111;
+  border: 1px solid #111111;
+}
+
+.visual-four {
+  background: linear-gradient(135deg, #0047ff, #f2f2f2);
+  color: #111111;
+}
+
+/* Informação textual do projeto */
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-info h3 {
+  font-size: 30px;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.project-info p:last-child {
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+/* Secção sobre */
+.about-section {
+  min-height: 70vh;
+  padding: 120px 32px;
+  border-top: 1px solid #111111;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 32px;
+}
+
+.about-text {
+  font-size: clamp(32px, 5vw, 72px);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+/* Secção de contactos */
+.contact-section {
+  padding: 80px 32px 32px;
+  border-top: 1px solid #111111;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Links grandes de contacto */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-links a {
+  font-size: clamp(56px, 10vw, 150px);
+  font-weight: 600;
+  line-height: 0.85;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+}
+
+.contact-links a:hover {
+  color: #0047ff;
+}
+
+/* Adaptação para telemóvel */
+@media (max-width: 800px) {
+  header {
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  nav {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .hero-top {
+    padding-top: 80px;
+  }
+
+  .hero-bottom {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+  }
+
+  .projects-section {
+    padding: 90px 20px 60px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section {
+    padding: 90px 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    padding: 70px 20px 24px;
+  }
 }
