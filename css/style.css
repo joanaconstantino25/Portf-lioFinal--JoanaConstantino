@@ -610,4 +610,83 @@ h2 {
     padding: 20px;
     grid-template-columns: 1fr;
   }
+}/* Conteúdo da secção Profile/About */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Texto secundário da biografia */
+.about-description {
+  max-width: 720px;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+/* Botão/link para o CV */
+.button-link {
+  width: fit-content;
+  border: 1px solid #111111;
+  padding: 14px 18px;
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.button-link:hover {
+  background-color: #111111;
+  color: #f7f7f3;
+}/* Secção interativa com p5.js */
+.interactive-section {
+  padding: 100px 32px;
+  border-top: 1px solid #111111;
+}
+
+/* Conteúdo da interação */
+.interactive-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Frase principal da interação */
+.interactive-content p {
+  font-size: clamp(48px, 8vw, 120px);
+  font-weight: 600;
+  line-height: 0.85;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+/* Palavra que muda com p5.js */
+#focus-word {
+  color: #0047ff;
+}
+
+/* Botão da interação */
+#focus-button {
+  width: fit-content;
+  border: 1px solid #111111;
+  background-color: transparent;
+  color: #111111;
+  padding: 14px 18px;
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+#focus-button:hover {
+  background-color: #111111;
+  color: #f7f7f3;
+}
+
+/* Adaptação da secção interativa para telemóvel */
+@media (max-width: 800px) {
+  .interactive-section {
+    padding: 70px 20px;
+  }
 }

@@ -20,7 +20,9 @@ Data de avaliação: [COLOCA A DATA]
   <title>Joana Constantino — Portfolio</title>
 
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+<script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -125,26 +127,49 @@ Data de avaliação: [COLOCA A DATA]
         </a>
       </div>
     </section>
+    <section class="interactive-section">
+  <p class="small-label">p5.js / DOM Interaction</p>
+
+  <div class="interactive-content">
+    <p>
+      Creative focus:
+      <span id="focus-word">Image</span>
+    </p>
+
+    <button id="focus-button">Change focus</button>
+  </div>
+</section>
 
     <section id="about" class="about-section">
-      <p class="small-label">About</p>
+  <p class="small-label">Profile</p>
 
-      <p class="about-text">
-        I am a Multimedia Design student interested in visual communication,
-        audiovisual narratives, interface design and digital experiences. My work
-        explores clean compositions, strong visual rhythm and clear communication.
-      </p>
-    </section>
+  <div class="about-content">
+    <p class="about-text">
+      I am a Multimedia Design student interested in visual communication,
+      audiovisual narratives, interface design and digital experiences.
+    </p>
 
-    <section id="contact" class="contact-section">
-      <p class="small-label">Reach out</p>
+    <p class="about-description">
+      My work explores clean compositions, strong visual rhythm and clear
+      communication. Through video, image, web design and digital campaigns,
+      I aim to create projects that are visually simple, direct and expressive.
+    </p>
 
-      <div class="contact-links">
-        <a href="mailto:your.email@example.com">Email</a>
-        <a href="#">Behance</a>
-        <a href="#">Instagram</a>
-      </div>
-    </section>
+    <a href="documents/cv-joana-constantino.pdf" class="button-link" target="_blank">
+      View Curriculum Vitae
+    </a>
+  </div>
+</section>
+
+   <section id="contact" class="contact-section">
+  <p class="small-label">Contact</p>
+
+  <div class="contact-links">
+    <a href="mailto:constantino.joana25@gmail.com">Email</a>
+    <a href="#">Behance</a>
+    <a href="#">Instagram</a>
+  </div>
+</section>
   </main>
 </body>
 </html>
