@@ -550,4 +550,64 @@ h2 {
 .gallery-placeholder.blue {
   background: linear-gradient(135deg, #0047ff, #8fb3ff);
   color: #ffffff;
+}/* Página Processing */
+.processing-grid {
+  padding: 32px;
+  border-top: 1px solid #111111;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* Cartões dos trabalhos de Processing */
+.processing-card {
+  border-top: 1px solid #111111;
+  padding-top: 16px;
+  display: grid;
+  gap: 24px;
+}
+
+/* Área visual dos sketches */
+.processing-visual {
+  min-height: 420px;
+  background-color: #111111;
+  color: #f7f7f3;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+/* Variação clara dos sketches */
+.processing-visual.light {
+  background-color: #f7f7f3;
+  color: #111111;
+  border: 1px solid #111111;
+}
+
+.processing-visual span {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 0.8;
+  letter-spacing: -0.08em;
+}
+
+.processing-card h3 {
+  margin: 18px 0;
+  font-size: 32px;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.processing-card p:last-child {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+/* Adaptação da página Processing para telemóvel */
+@media (max-width: 800px) {
+  .processing-grid {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
 }
