@@ -388,4 +388,166 @@ h2 {
   .contact-section {
     padding: 70px 20px 24px;
   }
+}/* Página individual de projeto */
+.project-hero {
+  min-height: 90vh;
+  padding: 120px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Informação pequena no topo da página de projeto */
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* Introdução textual do projeto */
+.project-intro {
+  padding: 80px 32px;
+  border-top: 1px solid #111111;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 32px;
+}
+
+.project-description {
+  font-size: clamp(28px, 4vw, 62px);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+/* Secção do vídeo */
+.project-video-section {
+  padding: 32px;
+  border-top: 1px solid #111111;
+}
+
+.project-video-section video {
+  width: 100%;
+  max-height: 85vh;
+  background-color: #111111;
+  display: block;
+}
+
+/* Detalhes do projeto em colunas */
+.project-details {
+  padding: 80px 32px;
+  border-top: 1px solid #111111;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.project-details p:last-child {
+  margin-top: 18px;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+/* Galeria provisória */
+.project-gallery {
+  padding: 32px;
+  border-top: 1px solid #111111;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.gallery-placeholder {
+  min-height: 420px;
+  background-color: #111111;
+  color: #f7f7f3;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.gallery-placeholder.large {
+  grid-column: span 2;
+  min-height: 520px;
+}
+
+.gallery-placeholder span {
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Link para o projeto seguinte */
+.next-project {
+  padding: 80px 32px 32px;
+  border-top: 1px solid #111111;
+}
+
+.next-project a {
+  font-size: clamp(40px, 7vw, 110px);
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.next-project a:hover {
+  color: #0047ff;
+}
+
+/* Adaptação das páginas de projeto para telemóvel */
+@media (max-width: 800px) {
+  .project-hero {
+    padding: 120px 20px 32px;
+  }
+
+  .project-meta {
+    flex-direction: column;
+  }
+
+  .project-intro {
+    padding: 60px 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .project-video-section {
+    padding: 20px;
+  }
+
+  .project-details {
+    padding: 60px 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .project-gallery {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-placeholder.large {
+    grid-column: span 1;
+  }
+
+  .next-project {
+    padding: 60px 20px 24px;
+  }
+}/* Variante escura para projetos audiovisuais */
+.dark-project {
+  background-color: #111111;
+  color: #f7f7f3;
+}/* Galeria clara para projetos de comunicação digital */
+.gallery-placeholder.light {
+  background-color: #f7f7f3;
+  color: #111111;
+  border: 1px solid #111111;
+}/* Variante azul para o projeto Autism Awareness Day */
+.blue-project {
+  background: linear-gradient(135deg, #0047ff, #f7f7f3);
+  color: #111111;
+}
+
+/* Blocos visuais azuis para campanhas */
+.gallery-placeholder.blue {
+  background: linear-gradient(135deg, #0047ff, #8fb3ff);
+  color: #ffffff;
 }

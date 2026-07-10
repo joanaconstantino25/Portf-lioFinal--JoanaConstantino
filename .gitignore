@@ -4,3 +4,5 @@
 
 # Pasta de definições locais do VS Code
 .vscode/
+# Videos grandes usados apenas localmente
+videos/*.mp4
