@@ -689,4 +689,21 @@ h2 {
   .interactive-section {
     padding: 70px 20px;
   }
+}/* Imagens reais das galerias dos projetos */
+.project-gallery img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-gallery img.large {
+  grid-column: span 2;
+  height: 520px;
+}
+
+@media (max-width: 800px) {
+  .project-gallery img.large {
+    grid-column: span 1;
+  }
 }
