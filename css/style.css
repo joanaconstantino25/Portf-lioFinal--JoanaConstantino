@@ -743,4 +743,16 @@ h2 {
 /* Pequena interação visual no cartão */
 .project-card:hover h3 {
   color: #0047ff;
+}/* Caixas dos sketches feitos com p5.js na página Processing */
+.sketch-box {
+  padding: 0;
+  overflow: hidden;
+  background-color: #111111;
+}
+
+/* Canvas gerado pelo p5.js */
+.sketch-box canvas {
+  width: 100% !important;
+  height: 420px !important;
+  display: block;
 }
