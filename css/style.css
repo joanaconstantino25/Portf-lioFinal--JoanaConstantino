@@ -755,4 +755,11 @@ h2 {
   width: 100% !important;
   height: 420px !important;
   display: block;
+}/* Vídeos incorporados do YouTube */
+.project-video-section iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  display: block;
+  background-color: #111111;
 }
